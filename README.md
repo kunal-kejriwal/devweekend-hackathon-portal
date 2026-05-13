@@ -2,7 +2,7 @@
 
 A full-stack hackathon platform frontend built on top of **APIEngine** — letting organizers create contests, participants submit projects, and reviewers rate them.
 
-**Live demo:** [https://apiengine-hackathon-portal-demo.vercel.app](https://apiengine-hackathon-portal-demo.vercel.app)
+**Live demo:** [https://apiengine-hackathon-portal-demo.vercel.app](https://apiengine-hackathon-portal-demo.vercel.app) · **[About & Screenshots](./ABOUT.md)**
 
 ---
 
@@ -140,6 +140,37 @@ GET  /accounts/v1/api/auth/me/         → developer profile
 | JSON DB | `/api/v1/db/{namespace}/user-roles/` | User role assignments |
 
 ---
+
+---
+
+## Signup Flow — End to End
+
+The complete signup experience, powered by APIEngine's SDK Auth and email templates:
+
+### 1. Email verification screen
+After signing up, the user lands on the verify-email page. A 6-digit code is sent to their inbox by APIEngine.
+
+![Verify email page](public/images/signup-verification-website-page.png)
+
+### 2. Verification code email (APIEngine template)
+APIEngine delivers the code via its built-in email template system — no custom email infrastructure needed.
+
+![Verification code email](public/images/signup-verification-email-code-template.png)
+
+### 3. OTP entered
+The user types the 6-digit code into the individual input boxes (paste also works).
+
+![OTP entered](public/images/signup-verification-website-page-otp-entered.png)
+
+### 4. Welcome email (APIEngine template)
+On successful verification, APIEngine automatically sends a welcome email via its template system.
+
+![Welcome email](public/images/signup-success-email-confirmation-welcome-email.png)
+
+### 5. Signed-in dashboard
+The user is now authenticated as a **Submitter** and lands on their My Submissions page.
+
+![Signed-in dashboard](public/images/signup-success-homepage.png)
 
 ---
 

@@ -2,6 +2,8 @@
 
 A full-stack hackathon platform frontend built on top of **APIEngine** — letting organizers create contests, participants submit projects, and reviewers rate them.
 
+**Live demo:** [https://apiengine-hackathon-portal-demo.vercel.app](https://apiengine-hackathon-portal-demo.vercel.app)
+
 ---
 
 ## Tech Stack
@@ -66,7 +68,7 @@ VITE_APP_NAME=DevWeekend
 
 ### 3. Set Frontend URL in APIEngine
 
-In **APIEngine Dashboard → Developer Settings**, set **Frontend URL** to `http://localhost:5173` (or your production URL). This is required for password-reset email links to work.
+In **APIEngine Dashboard → Developer Settings**, set **Frontend URL** to `http://localhost:5173` for local dev, or `https://apiengine-hackathon-portal-demo.vercel.app` for production. This is required for password-reset email links to work.
 
 ### 4. Run
 
